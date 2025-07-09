@@ -48,8 +48,8 @@ def cerca_civico(df_via, civico_input):
     return pd.DataFrame()
 
 def main():
-    st.title("📍 Zona Civico Bologna")
-    st.write("Scopri a quale zona e CAP appartiene un civico o una via a Bologna")
+    st.markdown("# 📍 Zona Civico Bologna")
+    st.markdown("**Scopri a quale zona e CAP appartiene un civico o una via a Bologna**")
 
     df = carica_dati()
     query = st.text_input("Inserisci via e civico (es. 'Via Mazzini 147/A') oppure solo la via")
